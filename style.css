@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+header{
+    color: aqua;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+body{
+    
+    background-image: url(https://static.vecteezy.com/system/resources/previews/003/343/387/non_2x/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg);
+
+    padding-bottom: 20%;
+}
+
+{prefix}accordion-color:{accordion-color};
+
+{prefix}accordion-bg: {accordion-bg};
+
+{prefix}accordion-transition: {accordion-transition};
+
+{prefix}accordion-border-width:{accordion-border-width};
+
+{prefix}accordion-border-radius: {accordion-border-radius};
+
+{prefix}accordion-inner-border-radius: {accordion-inner-border-radius};
+
+{prefix}accordion-border-color: {accordion-border-color};
+
+{prefix}accordion-btn-padding-x: {accordion-button-padding-x};
+
+{prefix}accordion-btn-padding-y: {accordion-button-padding-y};
+
+{prefix}accordion-btn-color: {accordion-button-color};
+
+{prefix}accordion-btn-bg: {accordion-button-bg};
+
+{prefix}accordion-btn-icon: {escape-svg(accordion-button-icon)};
+
+{prefix}accordion-btn-icon-width: {accordion-icon-width};
+
+{prefix}accordion-btn-icon-transform: {accordion-icon-transform};
+
+{prefix}accordion-btn-icon-transition: {accordion-icon-transition};
+
+{prefix}accordion-btn-active-icon: {escape-svg(accordion-button-active-icon)};
+
+{prefix}accordion-btn-focus-border-color: {accordion-button-focus-border-color};
+
+{prefix}accordion-btn-focus-box-shadow: {accordion-button-focus-box-shadow};
+
+{prefix}accordion-body-padding-x: {accordion-body-padding-x};
+
+{prefix}accordion-body-padding-y: {accordion-body-padding-y};
+
+{prefix}accordion-active-color: {accordion-button-active-color};
+
+{prefix}accordion-active-bg: {accordion-button-active-bg};
+
+element.style {
+}
+
+img {
+    width: 400px;
+    position: absolute;
+    bottom: 30px;
+    animation-name: movimentar;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.66,.29,1,.9);
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+}
+
+
+iframe{
+    margin-left: 30%;
+   /*  margin-bottom: 20%; */
+   border-radius: 60px;
+   border-style: groove;
+}
+
+@keyframes movimentar{
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(calc(100vw - 200px));
+}
+
+
+}
+
+@media (max-width: 760px){
+    img{
+        left: 15%;
+        position: relative;
+        margin-top: 25%;
+    }
+
+    iframe{
+        margin-left: 5%;
+        height: 60%;
+        width: 90%;
+
+    }
+
+    
+    input{
+        left: 20%;
+    }
+}
+
+footer {
+    position: absolute;
+    top: 125%;
+    font-size: 25px;
+    color: red;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
